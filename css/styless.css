@@ -144,7 +144,7 @@ font-family: var(--font-family-title);
 
 .link:hover,
 .link:focus {
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 /* section Hero*/
@@ -209,14 +209,16 @@ background-color: #188ce8;
     margin-left: var(--card-set-gap);
 }
 
-.benefits-button {
-    display: block;
+.benefits-tumb {
     width: 270px;
     height: 120px;
     margin-bottom: var(--card-set-gap);
     border: none;
     border-radius: 4px;
     background: var(--team-background-color);
+}
+.benefits-icon {
+    margin: 25px 101.5px;
 }
 
 .benefits-title {
@@ -339,10 +341,15 @@ padding-top: 0;
 .clients-item {
     border: 1px solid var(--primary-text-color);  
     border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
 }
 
 .clients-link {
-    fill: var(--primary-text-color)
+    display: block;
+    fill: var(--primary-text-color);
+
 }
 
 .clients-link:hover,
@@ -353,7 +360,7 @@ padding-top: 0;
 .clients-item:hover,
 .clients-item:focus {
     border: 1px solid var(--accent-color);
-    fill: var(--accent-color);   
+    fill: var(--accent-color);
 }
 
 /* Footer */
@@ -422,10 +429,25 @@ margin: 60px 0;
     display: flex;
 }
 
+.footer-socials-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primery-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--accent-color);
+}
+
 /* Potfolio */
 .projects-button {
     padding: 6px 22px;
-
     border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
